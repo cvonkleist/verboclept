@@ -77,7 +77,7 @@ end
 describe MarkovChain do
   it "should produce output that sounds human-ish when given human input" do
     #pending
-    @chain = MarkovChain.new(3, true)
+    @chain = MarkovChain.new(5, true)
     @chain.analyze(File.read('demo.txt'))
     puts @chain.rant(200)
     print "does this look like human output?"
